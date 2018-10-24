@@ -31,7 +31,7 @@
 }
 
 .hero [role="alert"] button {
-    background: var(--colorSecondary);
+    background: none;
     color: var(--colorBlack);
     -webkit-appearance: none;
     border: none;
@@ -39,7 +39,6 @@
     border-radius: none;
     display: flex;
     align-items: center;
-    width: 12em;
     margin: 0 auto;
     text-transform: uppercase;
 }
