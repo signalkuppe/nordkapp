@@ -2,8 +2,20 @@
 (function () {
   new SmoothScroll('a[href*="#"]', {offset: 0})
   stickybits('.nav',{useStickyClasses: true, stickyBitStickyOffset: -1})
+
+  function slideIndex() {
+    var current = this.currentSlide
+    let links = document.querySelectorAll('.ristorante-carosello-pager')
+    Array.from(links).forEach(function (l, i){
+      l.classList.remove('js-is-active')
+      if (i === current) {
+        l.classList.add('js-is-active')
+      }
+    })
+  }
   var mySiema = new Siema({
-    loop: true
+    loop: true,
+    onChange: slideIndex
   });
 
   // slideshow
@@ -21,6 +33,30 @@
     this.nextArrow.addEventListener('click', () => this.next());
   }
   
+  Siema.prototype.addPagination = function() {
+    for (let i = 0; i < this.innerElements.length; i++) {
+      var btn = document.createElement('a');
+      btn.classList.add('ristorante-carosello-pager')
+      btn.innerHTML = '&#9632;';
+      if (i === 0) {
+        btn.classList.add('js-is-active')
+      }
+      var _this = this
+      btn.addEventListener('click', function (e) {
+        _this.goTo(i)
+        let links = document.querySelectorAll('.ristorante-carosello-pager')
+        Array.from(links).forEach(function (l){
+          l.classList.remove('js-is-active')
+        })
+        e.target.classList.toggle('js-is-active')
+
+      })
+      this.selector.appendChild(btn);
+    }
+  }
+  
+  // Trigger pagination creator
+  mySiema.addPagination();
   mySiema.addArrows();
   gumshoe.init()
 
