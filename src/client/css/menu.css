@@ -11,9 +11,9 @@
     display: grid;
     grid-gap: 1em;
     grid-template-columns: 2em auto;
-    margin-bottom: 0.5em;
-    padding-bottom: 0.25em;
-    border-bottom: 1px dashed #BFA393;
+    margin-bottom: 0.75em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px dashed var(--colorTheme);
 }
 
 .menu li span {
