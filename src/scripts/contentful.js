@@ -13,6 +13,10 @@ const getSpace = async () => {
   try {
     let space = await Client.getSpace()
     mkdirp(path.join(process.cwd(),'data/json'), (err, dir) => {
+      if (err) {
+        console.log('❗', err)
+        process.exit(1)          
+      }
       fs.writeFileSync(path.join(process.cwd(), 'data/json/space.json'), JSON.stringify(space), 'utf-8')
     })
   } catch (err) {
@@ -37,7 +41,13 @@ const getContent = async () => {
         iteration ++
       }
       try {
-        fs.writeFileSync(path.join(process.cwd(), `data/json/${ct.sys.id}.json`), JSON.stringify(entries), 'utf-8')
+        mkdirp(path.join(process.cwd(),'data/json'), (err, dir) => {
+          if (err) {
+            console.log('❗', err)
+            process.exit(1)          
+          }
+          fs.writeFileSync(path.join(process.cwd(), `data/json/${ct.sys.id}.json`), JSON.stringify(entries), 'utf-8')
+        })
         console.log('✅ finito', ct.sys.id, entries.length)
       } catch (err) {
         console.log('❗', err)
@@ -66,12 +76,18 @@ const getFiles = async () => {
       iteration ++
     }
     try {
-      fs.writeFileSync(path.join(process.cwd(), `data/json/assets.json`), JSON.stringify(entries), 'utf-8')
+      mkdirp(path.join(process.cwd(),'data/json'), (err, dir) => {
+        if (err) {
+          console.log('❗', err)
+          process.exit(1)          
+        }
+        fs.writeFileSync(path.join(process.cwd(), `data/json/assets.json`), JSON.stringify(entries), 'utf-8')
+      })
       console.log('✅ finiti gli assets', entries.length)
     } catch (err) {
       console.log('❗', err)
       process.exit(1)
-      }
+    }
     
   } catch (err) {
     console.log('❗', err)
