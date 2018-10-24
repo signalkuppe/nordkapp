@@ -4,7 +4,6 @@
 
 .ristorante-carosello {
     position: relative;
-    text-align: center;
 }
 
 .ristorante-carosello button {
@@ -33,10 +32,14 @@
 }
 
 .ristorante-carosello-pager {
+    text-align: center;
+}
+
+.ristorante-carosello-pager-item {
     font-size: 2em;
     color: var(--colorTheme);
 }
 
-.ristorante-carosello-pager.js-is-active {
+.ristorante-carosello-pager-item.js-is-active {
     color: var(--colorPrimary);
 }

@@ -5,7 +5,7 @@
 
   function slideIndex() {
     var current = this.currentSlide
-    let links = document.querySelectorAll('.ristorante-carosello-pager')
+    let links = document.querySelectorAll('.ristorante-carosello-pager-item')
     Array.from(links).forEach(function (l, i){
       l.classList.remove('js-is-active')
       if (i === current) {
@@ -36,7 +36,7 @@
   Siema.prototype.addPagination = function() {
     for (let i = 0; i < this.innerElements.length; i++) {
       var btn = document.createElement('a');
-      btn.classList.add('ristorante-carosello-pager')
+      btn.classList.add('ristorante-carosello-pager-item')
       btn.innerHTML = '&#9632;';
       if (i === 0) {
         btn.classList.add('js-is-active')
@@ -44,14 +44,14 @@
       var _this = this
       btn.addEventListener('click', function (e) {
         _this.goTo(i)
-        let links = document.querySelectorAll('.ristorante-carosello-pager')
+        let links = document.querySelectorAll('.ristorante-carosello-pager-item')
         Array.from(links).forEach(function (l){
           l.classList.remove('js-is-active')
         })
         e.target.classList.toggle('js-is-active')
 
       })
-      this.selector.appendChild(btn);
+      document.querySelector('.ristorante-carosello-pager').appendChild(btn);
     }
   }
   
