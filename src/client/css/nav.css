@@ -1,0 +1,30 @@
+.nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    background: #735645;
+    z-index: 100000;
+    padding: 1em 0;
+}
+
+.nav-menu {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: var(--containerWidth);
+}
+
+.nav-menu a {
+    color: var(--colorWhite);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    font-weight: bold;
+    display: block;
+    padding: 0.5em 1em;
+}
+
+.nav-menu a.active {
+    background: var(--colorThemeXXDark);
+}

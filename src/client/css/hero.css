@@ -1,0 +1,32 @@
+.hero {
+    background: linear-gradient(var(--colorThemeXXDark) 70%, var(--colorThemeDark) 70%);
+    color: #cbc6c5;
+} 
+
+.hero h1 {
+    display: grid;
+    grid-template-columns: 2em auto;
+    align-items: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: var(--colorWhite);
+}
+
+.hero svg {
+    height: 2em;
+}
+
+.hero img {
+    max-width: var(--containerWidth);
+    width: 100%;
+    object-fit: cover;
+    border: 0.5em solid var(--colorThemeXLight);
+}
+
+.hero [role="alert"] {
+    background: var(--colorThemeLight);
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.85em;
+    color: #6a6040;
+}

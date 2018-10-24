@@ -1,0 +1,109 @@
+:root {
+
+	/* ---------------------- 1. colors ---------------------- */
+ 
+
+	/* 1.1 theme colors */
+
+	--colorBodyBackground: var(--colorThemeXLight);
+	--colorPrimary: #bf1e2e;
+	--colorSecondary: #fcb040;
+	--colorThemeXXDark: #312926;
+	--colorThemeXDark: #402921;
+	--colorThemeDark: #735645;
+	--colorTheme: #BFA393;
+	--colorThemeLight: #D9CBBF;
+	--colorThemeXLight: #F2E4D8;
+	
+	/* 1.2 grays */
+	
+	--colorWhite: #FFFFFF;
+	--colorGrayLightest: #F4F4F4;
+	--colorGrayLighter: #eeeeee;
+	--colorGrayLight: #cccccc;
+	--colorGray: #9B9B9B;
+	--colorGrayMedium: #6B6B6B;
+	--colorGrayDark: #383838;
+	--colorBlack: #000000;
+	
+
+	/* 1.3 text */
+	
+	--colorText: var(--colorGrayDark);
+
+	/* 1.4 links */
+	
+	--colorLinks: var(--colorPrimary);
+
+	/* 1.5 Notifications */
+
+	--colorInfo: rgb(5, 37, 44);
+	--colorBgInfo:#7CE4FE;
+
+	--colorSuccess: #229863;
+	--colorBgSuccess: #8EF3C5;
+
+	--colorWarning: #BB992F;
+	--colorBgWarning: #FFE28C;
+
+	--colorDanger: #FFF;
+    --colorBgDanger: #B33C12;
+	
+
+	/* ----------------------- 2. fonts ---------------------- */
+	
+
+	/* 2.1 font stack */
+
+	--fontSerif: 'Playfair Display', serif;
+    --fontSans: 'Source Sans Pro', serif;
+
+	/* 2.2 font sizes */
+
+	--fontSizeSmall: 0.833em;
+	--fontSizeBase: 1.25em; 
+	--fontSizeH1: 2.961em; 
+	--fontSizeH2: 2.221em; 
+	--fontSizeH3: 1.666em; 
+	--fontSizeH6: var(--fontSizeSmall); 
+
+
+	/* ----------------------- 3. layout ---------------------- */
+
+	--containerWidth: 768px;
+    --containerSideGutter: 20px;
+
+	/* ----------------------- 4. Z-index stack ---------------------- */
+
+	--zIndexNotifications: 100;
+	--zIndexMenu: 10;
+
+	/* ----------------------- 5. button ---------------------- */
+	
+
+	/* 4.1 default */
+
+	--buttonDefaultBg: var(--colorGrayLightest);
+	--buttonDefaultColor: var(--colorGray);
+
+	/* 4.2 primary */
+
+	--buttonPrimaryBg: var(--colorPrimary);
+	--buttonPrimaryColor: var(--colorWhite);
+
+	/* 4.3 secondary */
+
+	--buttonSecondaryBg: var(--colorSecondary);
+	--buttonSecondaryColor: var(--colorWhite);
+}
+
+@media screen and (max-width: 1023px) {
+	:root {
+		--fontSizeSmall: 0.75em;
+		--fontSizeBase: 1em; 
+		--fontSizeH1: 2.369em; 
+		--fontSizeH2: 1.777em; 
+		--fontSizeH3: 1.333em; 
+		--fontSizeH6: var(--fontSizeSmall); 
+	}
+}

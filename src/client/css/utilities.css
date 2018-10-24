@@ -1,0 +1,122 @@
+/* 
+* classi di utilità valide in tutti i componenti
+* ZONA PERICOLOSA!
+*/
+
+.u-pb-1 {
+  padding-bottom: 1em!important;
+}
+
+.u-pt-1 {
+  padding-top: 1em!important;
+}
+
+.u-pb-2 {
+  padding-bottom: 2em!important;
+}
+
+.u-pt-2 {
+  padding-top: 2em!important;
+}
+
+.u-mt-0 {
+  margin-top: 0!important;
+}
+
+.u-mb-0 {
+  margin-bottom: 0!important;
+}
+
+.u-mb-2 {
+  margin-bottom: 2em!important;
+}
+
+.u-mt-4 {
+  margin-top: 4em!important;
+}
+
+.u-list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.u-list-inline li {
+  display: inline-block;
+}
+
+.u-button {
+  display: inline-block!important;
+  padding: 0.5em 1em!important;
+  border: 2px solid var(--colorPrimary)!important;
+  text-decoration: none!important;
+  font-weight: bold!important;
+  color: var(--colorWhite);
+  background: var(--colorPrimary)!important;
+}
+
+.u-font-serif {
+  font-family: var(--fontSerif)!important;
+}
+
+.u-titolosezione {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  margin-bottom: 2em;
+}
+
+.u-titolosezione::after {
+  content: '';
+  background-color:  #D9CBBF;
+  height: 2px;
+  width: 50vw;
+  margin: 10px;
+  position: relative;
+  top: 2px;
+}
+
+.u-titolosezione::before {
+  content: '';
+  background-color: #D9CBBF;
+  height: 2px;
+  width: 50vw;
+  margin: 10px;
+  position: relative;
+  top: 2px;
+}
+
+
+.u-section {
+  padding: 2em 0;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+/* Nascondi gli elementi visivamente, ma non per gli screen readers */
+
+.u-onlyForScreenReaders {
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  position: fixed;    
+}
+
+/* Gabbia principale della pagina */
+
+.u-container {
+  max-width: var(--containerWidth);
+  margin:  0 auto;  
+  padding: 0 var(--containerSideGutter);
+}
+
+.u-gutter {
+  padding: 0 var(--containerSideGutter);
+}

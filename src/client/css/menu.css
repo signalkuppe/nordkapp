@@ -1,0 +1,29 @@
+
+.menu dd {
+    margin: 0;
+}
+
+.menu ul {
+    margin-bottom: 3em;
+}
+
+.menu li {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: 2em auto;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.25em;
+    border-bottom: 1px dashed #BFA393;
+}
+
+.menu li span {
+    font-weight: bold;
+    color: var(--colorThemeDark);
+}
+
+.menu aside strong,
+.menu dt {
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-bottom: 1em;
+}
