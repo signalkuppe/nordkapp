@@ -26,5 +26,10 @@
 
   const observer = lozad(); // lazy loads elements with default selector as '.lozad'
   observer.observe();
+
+  // orari
+  document.getElementById('orari-open').addEventListener('click', function (e) {
+    document.getElementById('orari').classList.toggle('js-is-open')
+  })
   
 })()
