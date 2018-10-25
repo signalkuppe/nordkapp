@@ -2,10 +2,13 @@
 (function () {
   new SmoothScroll('a[href*="#"]', {offset: 0})
   stickybits('.nav',{useStickyClasses: true, stickyBitStickyOffset: -1})
-
+  var images = Array.from(document.querySelectorAll('.ristorante-carosello img'))
   function slideIndex() {
     var current = this.currentSlide
     let links = document.querySelectorAll('.ristorante-carosello-pager-item')
+    if (current > 0) {
+      images[current].setAttribute('src', images[current].getAttribute('data-src'))
+    }
     Array.from(links).forEach(function (l, i){
       l.classList.remove('js-is-active')
       if (i === current) {
