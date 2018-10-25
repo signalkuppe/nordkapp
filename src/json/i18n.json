@@ -82,5 +82,8 @@
 	},
 	"Telefono": {
 		"en": "Phone Number"
+	},
+	"Orari e aperture": {
+		"en": "Opening hours"
 	}
 }

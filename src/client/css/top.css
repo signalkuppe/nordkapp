@@ -13,7 +13,7 @@
     grid-template-columns: repeat(2, 2em);
     align-items: center;
     padding: 0.25em;
-    height: 2em;
+    height: 2.5em;
 }
 
 .top-shortcuts a {
@@ -23,7 +23,7 @@
 }
 
 .top-icon svg {
-    height: 1em;
+    height: 1.25em;
 }
 
 .top-lang {
@@ -37,7 +37,7 @@
 .top-lang a {
     color: var(--colorThemeXXDark);
     text-decoration: none;
-    line-height: 2em;
+    line-height: 2.5em;
     padding: 0 0.25em;
 }
 

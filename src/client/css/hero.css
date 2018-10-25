@@ -25,7 +25,7 @@
 
 .hero [role="alert"] {
     background: var(--colorSecondary);
-    padding: 1em 0;
+    padding: 0.75em 0;
     font-size: 0.85em;
     color: var(--colorBlack);
 }
