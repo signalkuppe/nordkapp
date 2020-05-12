@@ -1,5 +1,7 @@
+dist
 .DS_Store
-node_modules/
-dist/
-data/
-npm-debug.log
+.gitignore
+node_modules
+_site
+.env
+.cache

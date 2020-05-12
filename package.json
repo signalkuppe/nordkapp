@@ -4,21 +4,28 @@
   "description": "Nordkapp website",
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "build": "",
+    "dev": "eleventy --serve"
+  },
   "dependencies": {},
   "devDependencies": {
-    "contentful": "^6.1.1",
-    "date-fns": "^1.29.0",
-    "grunt": "1.0.3",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-watch": "^1.1.0",
-    "grunt-html-builder": "^0.6.7",
-    "grunt-run": "^0.8.1",
-    "lodash": "^4.17.10",
-    "marked": "^0.4.0",
-    "mkdirp": "^0.5.1",
-    "prismjs": "^1.6.0"
+    "@11ty/eleventy": "^0.11.0-beta.4",
+    "autoprefixer": "^9.7.6",
+    "chalk": "^4.0.0",
+    "cheerio": "^1.0.0-rc.3",
+    "clean-css": "^4.2.3",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "glob": "^7.1.6",
+    "html-minifier": "^4.0.0",
+    "nodemon": "^2.0.3",
+    "postcss": "^7.0.27",
+    "prettier": "^2.0.5",
+    "purgecss": "^2.1.2"
   }
 }

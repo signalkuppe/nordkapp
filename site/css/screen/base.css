@@ -1,0 +1,30 @@
+:root {
+  font-size: calc(1vw + 1vh + 0.5vmin);
+  --fontSizeBase: 1rem;
+  --fontSizeLarge: 3rem;
+  --fontSans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  --fontSerif: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  font-size: var(--fontSizeBase);
+  font-family: var(--fontSans);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--fontSerif);
+  font-weight: 700;
+  letter-spacing: -0.15rem;
+}
+
+h1 {
+  font-size: var(--fontSizeLarge);
+}
+
+strong,
+b {
+  font-weight: 700;
+}
